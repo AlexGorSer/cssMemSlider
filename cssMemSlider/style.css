@@ -28,15 +28,19 @@ body {
     display: flex;
     width: 400%;
     justify-content: space-around;
+    transition: all 1s;
 }
 
 
 p {
+    text-align: justify;
     color: white;
     font-size: 2rem;
+    margin-left: 2rem;
 }
 
 .controls {
+    margin-right: 2rem;
     display: flex;
 }
 
@@ -64,6 +68,10 @@ label .button {
 
 label:hover .button {
     background-color: orange;
+}
+
+label:active .button {
+    transform: scale(0.8);
 }
 
 /* .switch {
@@ -108,6 +116,7 @@ img {
     display: flex;
     /* justify-content: center; */
     align-items: baseline;
+    /* transition: all 1s; */
 }
 
 .textconteiner {
@@ -117,11 +126,13 @@ img {
 .text {
     width: 400%;
     display: flex;
+    transition: all 1s;
 }
 
 .slidetext {
     width: 25%;
 }
+
 
 #switch1:checked~.imgcontent {
     /* margin-left: 0; */
