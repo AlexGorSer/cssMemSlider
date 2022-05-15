@@ -1,0 +1,149 @@
+html {
+    font-size: 10px;
+
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 820px;
+    text-align: center;
+}
+
+
+.conteiner {
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 1rem;
+    border: 1px solid bisque;
+}
+
+.imgcontent {
+    display: flex;
+    width: 400%;
+    justify-content: space-around;
+}
+
+
+p {
+    color: white;
+    font-size: 2rem;
+}
+
+.controls {
+    display: flex;
+}
+
+/* .button {
+    background: rgb(11, 3, 3);
+    border: 0.2rem solid;
+}
+
+.controls label {
+    padding: 1rem;
+} */
+
+.switch {
+    cursor: pointer;
+    margin: 1rem;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid grey;
+    background-color: white;
+
+    display: inline-block;
+
+    /* padding: 1rem; */
+}
+
+
+
+.switch:hover {
+    background-color: orange;
+}
+
+input[name="slider"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.content {
+    width: 400%;
+    display: flex;
+}
+
+.slide {
+    padding: 2rem;
+
+}
+
+img {
+    width: 780px;
+    height: 438px;
+}
+
+
+
+.textcontent {
+    display: flex;
+    /* justify-content: center; */
+    align-items: baseline;
+}
+
+.textconteiner {
+    overflow: hidden;
+}
+
+.text {
+    width: 400%;
+    display: flex;
+}
+
+.slidetext {
+    width: 25%;
+}
+
+#switch1:checked~.imgcontent {
+    /* margin-left: 0; */
+    transform: translate(0%, 0%);
+}
+
+#switch2:checked~.imgcontent {
+    /* margin-left: -25%; */
+    transform: translate(-25%, 0%);
+}
+
+#switch3:checked~.imgcontent {
+    /* margin-left: -50%; */
+    transform: translate(-50%, 0%);
+}
+
+#switch4:checked~.imgcontent {
+    /* margin-left: -75%; */
+    transform: translate(-75%, 0%);
+}
+
+
+
+
+#switch1:checked~.textcontent .text {
+    transform: translate(0%, 0%);
+}
+
+#switch2:checked~.textcontent .text {
+    transform: translate(-25%, 0%);
+}
+
+#switch3:checked~.textcontent .text {
+    transform: translate(-50%, 0%);
+}
+
+#switch4:checked~.textcontent .text {
+    transform: translate(-75%, 0%);
+}
