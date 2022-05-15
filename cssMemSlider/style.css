@@ -28,7 +28,7 @@ body {
     display: flex;
     width: 400%;
     justify-content: space-around;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 
@@ -114,9 +114,8 @@ img {
 
 .textcontent {
     display: flex;
-    /* justify-content: center; */
-    align-items: baseline;
-    /* transition: all 1s; */
+    align-items: center;
+    margin: 2rem 0rem;
 }
 
 .textconteiner {
@@ -126,7 +125,7 @@ img {
 .text {
     width: 400%;
     display: flex;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .slidetext {
@@ -177,4 +176,20 @@ img {
 
 #switch4:checked~.textcontent .text {
     transform: translate(-75%, 0%);
+}
+
+@media screen and (max-width: 930px) {
+    img {
+        width: 360px;
+        height: 360px;
+    }
+
+    .wrapper {
+        width: 400px;
+    }
+
+    .textcontent {
+        flex-wrap: wrap-reverse;
+        justify-content: center
+    }
 }
